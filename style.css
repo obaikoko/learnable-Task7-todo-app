@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #161643;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input {
+  margin: 10px 0px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.input:focus {
+  outline: none;
+}
+.btn {
+  background-color: orange;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.88);
+}
+
+#taskList {
+  margin: 30px 5px;
+  width: 100%;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #fff;
+  margin: 10px 2px;
+  width: 100%;
+}
+.task input {
+  background-color: transparent;
+  text-transform: capitalize;
+  color: #fff;
+  width: 100%;
+  border: none;
+  margin: 5px;
+}
+
+.task input.active {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+}
+.task input:focus {
+  outline: none;
+}
+.taskBtn {
+  display: flex;
+  text-transform: uppercase;
+}
+.taskBtn .btnUpdate {
+  background-color: transparent;
+  color: orange;
+  border: none;
+  cursor: pointer;
+  margin: 0px 5px;
+  text-transform: capitalize;
+}
+.taskBtn .btnUpdate:active {
+  transform: scale(0.88);
+}
+.taskBtn .btnRemove {
+  background-color: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+  margin: 0px 5px;
+  text-transform: capitalize;
+}
+.taskBtn .btnRemove:active {
+  transform: scale(0.88);
+}
